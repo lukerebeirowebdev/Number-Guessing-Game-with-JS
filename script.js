@@ -16,16 +16,16 @@ function checkGuess() {
   guesses.textContent += userGuess + ' ';
 
   if (userGuess === randomNumber) {
-    lastResult.textContent = 'Congratulations! You got it right!';
+    lastResult.textContent = 'CONGRATULATIONS YOU HAVE WON!, HERE HAVE A SWEET ROLL';
     lastResult.style.backgroundColor = 'green';
     lowOrHi.textContent = '';
     setGameOver();
   } else if (guessCount === 10) {
-    lastResult.textContent = '!!!GAME OVER!!!';
+    lastResult.textContent = '!!!GAME OVER PLEASE TRY AGAIN!!!';
     lowOrHi.textContent = '';
     setGameOver();
   } else {
-    lastResult.textContent = 'Wrong!';
+    lastResult.textContent = 'YOU ARE VERY WRONG!';
     lastResult.style.backgroundColor = 'red';
     if (userGuess < randomNumber) {
       lowOrHi.textContent = 'Last guess was too low!';
