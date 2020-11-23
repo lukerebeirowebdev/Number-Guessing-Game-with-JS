@@ -7,6 +7,7 @@ const guessField = document.querySelector('.guessField');
 let guessCount = 1;
 let resetButton;
 
+
 function checkGuess() {
   let userGuess = Number(guessField.value);
   if (guessCount === 1) {
@@ -17,15 +18,16 @@ function checkGuess() {
 
   if (userGuess === randomNumber) {
     lastResult.textContent = 'CONGRATULATIONS YOU HAVE WON!, HERE HAVE A SWEET ROLL';
+    lastResult.style.
     lastResult.style.backgroundColor = 'green';
     lowOrHi.textContent = '';
     setGameOver();
   } else if (guessCount === 10) {
-    lastResult.textContent = '!!!GAME OVER PLEASE TRY AGAIN!!!';
+    lastResult.textContent = '!!!GAME OVER YOU TOOK AN ARROW TO THE KNEE!!!';
     lowOrHi.textContent = '';
     setGameOver();
   } else {
-    lastResult.textContent = 'YOU ARE VERY WRONG!';
+    lastResult.textContent = 'YOU ARE WRONG!';
     lastResult.style.backgroundColor = 'red';
     if (userGuess < randomNumber) {
       lowOrHi.textContent = 'Last guess was too low!';

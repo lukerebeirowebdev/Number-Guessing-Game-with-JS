@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Number Guessing Game</title>
+    <title>GUESS THE NUMBER!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Forum&family=Karla:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" text="css/text">
+
 </head>
+
 <body>
 
-    <h1>Luke's Number Guessing Game</h1>
+    <h1>GUESS THE NUMBER!</h1>
 
-    <p>I have selected a random number between 1 and 100. See if you can guess in 10 turns or fewer. I will tell you if your guess was too high or too low</p>
+    <div class="img">
+        <div class="img">
+            <img src="/img/PIG-FUN.gif" alt="">
+        </div>
+    </div>
+
+    <p>The computer has selected a random number between 1 and 100. </p>
+    <p>You have 10 turns.
+    <p>It will tell you if your guess was too high or too low.</p>
+    <p>HAVE FUN!</p>
+
     <div class="resultParas">
         <p class="guesses"></p>
         <p class="lastResult"></p>
         <p class="lowOrHi"></p>
     </div>
-    <label for="guessField">Enter a guess:</label><input type="text" id="guessField" class="guessField">
-    <input type="submit" value="Submit guess" class="guessSubmit">
-    <script src="/script.js"></script>
+    <label for="guessField">ENTER A NUMBER</label><input type="text" id="guessField" class="guessField">
+    <input type="submit" value="SUBMIT GUESS!" class="guessSubmit" accesskey="s">
+
+    <script src="/script/script.js"></script>
 </body>
+
 </html>
