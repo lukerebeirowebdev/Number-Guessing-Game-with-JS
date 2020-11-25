@@ -19,20 +19,22 @@ function checkGuess() {
   if (userGuess === randomNumber) {
     lastResult.textContent = 'CONGRATULATIONS YOU HAVE WON!, HERE HAVE A SWEET ROLL';
     lastResult.style.
-    lastResult.style.backgroundColor = 'green';
+    lastResult.style.backgroundColor = 'white';
+
     lowOrHi.textContent = '';
     setGameOver();
   } else if (guessCount === 10) {
-    lastResult.textContent = '!!!GAME OVER YOU TOOK AN ARROW TO THE KNEE!!!';
+    lastResult.textContent = '!!!GAME OVER YOU!!!';
     lowOrHi.textContent = '';
     setGameOver();
   } else {
     lastResult.textContent = 'YOU ARE WRONG!';
-    lastResult.style.backgroundColor = 'red';
+    lastResult.style.backgroundColor = 'blue';
+    
     if (userGuess < randomNumber) {
-      lowOrHi.textContent = 'Last guess was too low!';
+      lowOrHi.textContent = 'Your guess is too low!';
     } else if (userGuess > randomNumber) {
-      lowOrHi.textContent = 'Last guess was too high!';
+      lowOrHi.textContent = 'Your guess is too high!';
     }
   }
 
