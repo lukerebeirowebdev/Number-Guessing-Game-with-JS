@@ -8,33 +8,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Forum&family=Karla:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" text="css/text">
+    <link rel="stylesheet" href="/css/animation.css">
 
 </head>
 
 <body>
 
-    <h1>GUESS THE NUMBER!</h1>
+    <h1><span>GUESS THE</span><span>NUMBER!</span></h1>
 
-    <!-- <div class="img">
-        <div class="img">
-            <img src="/img/PIG-FUN.gif" alt="">
+    <div class="img">
+        <class class="img">
+            <img src="/img/" alt="">
+        </class>
+
+
+        <p>The computer has selected a random number between 1 and 100. </p>
+        <p>You have 10 turns.
+        <p>It will tell you if your guess was too high or too low.</p>
+        <p>HAVE FUN!</p>
+
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
         </div>
-    </div> -->
 
-    <p>The computer has selected a random number between 1 and 100. </p>
-    <p>You have 10 turns.
-    <p>It will tell you if your guess was too high or too low.</p>
-    <p>HAVE FUN!</p>
+        <label for="guessField">ENTER A NUMBER</label><input type="text" id="guessField" class="guessField">
+        <input type="submit" value="SUBMIT GUESS!" class="guessSubmit" accesskey="s">
+        <script src="/script/script.js"></script>
 
-    <div class="resultParas">
-        <p class="guesses"></p>
-        <p class="lastResult"></p>
-        <p class="lowOrHi"></p>
-    </div>
-    <label for="guessField">ENTER A NUMBER</label><input type="text" id="guessField" class="guessField">
-    <input type="submit" value="SUBMIT GUESS!" class="guessSubmit" accesskey="s">
 
-    <script src="/script/script.js"></script>
 </body>
 
 </html>
